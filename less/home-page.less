@@ -33,7 +33,13 @@
       border-radius: 20px;
       height: 100%;
       
+      
+        @media @mobile{
+          width:100%;}
+        
       }
+      
+      
     }
   }
 
@@ -60,12 +66,15 @@
     @media @mobile{
       flex-direction: column-reverse;
       width:100%;
+      padding:2%;
+      margin-top:0%;
     }
 
     .walk-text {
       width: 50%;
       @media @mobile{
         width:100%;
+        
       }
 
       h3 {
@@ -104,6 +113,7 @@
       margin-left: 4%;
       @media @mobile{
         width:100%;
+        margin-left: 0%;
       }
       
       img {
@@ -128,11 +138,7 @@
     display:none;}
 }
 
-img .blast{
-  @media @mobile{
-    width:100%;}
-  
-}
+
 
 .headingimg{
   @media @mobile{
