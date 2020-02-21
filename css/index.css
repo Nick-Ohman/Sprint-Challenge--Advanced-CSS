@@ -287,6 +287,8 @@ footer {
 .walk .walk-text .btn button:hover {
   background-color: red;
   font-style: #454A59;
+  animation-name: example;
+  animation-duration: 4s;
 }
 .walk .walk-img {
   width: 46%;
@@ -316,5 +318,19 @@ footer {
 @media (max-width:500px) {
   .headingimg {
     width: 100%;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
   }
 }

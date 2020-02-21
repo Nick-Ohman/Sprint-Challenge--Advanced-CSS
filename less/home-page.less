@@ -93,6 +93,7 @@
             color:white;
             border-radius: 5px;
             padding: 1%;
+            
 
             @media @mobile{
               width:100%;
@@ -103,6 +104,8 @@
             &:hover{
               background-color: red;
               font-style: @river-bend;
+              animation-name: example;
+              animation-duration: 4s;
             }
         }
       }
@@ -143,4 +146,11 @@
 .headingimg{
   @media @mobile{
   width:100%;}
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
