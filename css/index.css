@@ -127,6 +127,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 html {
   font-size: 62.5%;
@@ -176,6 +177,12 @@ h1 {
   margin-left: 12%;
   padding-bottom: 3%;
 }
+@media (max-width:500px) {
+  h1 {
+    margin-left: 3%;
+    font-size: 3rem;
+  }
+}
 nav {
   display: flex;
   width: 70%;
@@ -209,43 +216,102 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images {
+    width: 100%;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+@media (max-width:500px) {
+  .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+@media (max-width:500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
+}
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.walk .walk-text .btn button {
+  width: 70px;
+  background-color: #22283A;
+  color: white;
+  border-radius: 5px;
+  padding: 1%;
+}
+@media (max-width:500px) {
+  .walk .walk-text .btn button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+}
+.walk .walk-text .btn button:hover {
+  background-color: red;
+  font-style: #454A59;
+}
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width:500px) {
+  .walk .walk-img {
+    width: 100%;
+  }
+}
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .launch {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  img .blast {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .headingimg {
+    width: 100%;
+  }
 }
