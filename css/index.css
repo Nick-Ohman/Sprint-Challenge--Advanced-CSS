@@ -127,7 +127,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid black;
 }
 html {
   font-size: 62.5%;
@@ -284,7 +283,14 @@ footer {
   background-color: #22283A;
   color: white;
   border-radius: 5px;
+  border-color: red;
   padding: 1%;
+}
+.walk .walk-text .btn button:hover {
+  background-color: red;
+  font-style: #454A59;
+  animation-name: example;
+  animation-duration: 4s;
 }
 @media (max-width:500px) {
   .walk .walk-text .btn button {
@@ -292,12 +298,6 @@ footer {
     height: 60px;
     font-size: 1.75rem;
   }
-}
-.walk .walk-text .btn button:hover {
-  background-color: red;
-  font-style: #454A59;
-  animation-name: example;
-  animation-duration: 4s;
 }
 .walk .walk-img {
   width: 46%;
